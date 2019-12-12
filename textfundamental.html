@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>html文字基础</title>
+</head>
+<body>
+    标题heading
+    <h1>主标题</h1>
+    <h2>第二级标题</h2>
+    <h3>第三级标题</h3>
+    <h4>第四级标题</h4>
+    <h5>第五级标题</h5>
+    <h6>第六级标题</h6>
+    最好只对每个页面使用一次<br/>
+    在可用的六个标题级别中，建议每页使用不超过三个<br/>
+    段落
+    <p>段落</p>
+    列表<br/>
+    列表分为无序列表，有序列表，自定义列表<br/>
+    无序列表Unordered list<br/>
+    ul元素定义无序列表，li定义列表项,无序列表列表项没有序号，只有符号<br/>
+    ul元素type属性定义列表项符号类型
+    <ul type="circle">
+        <li>列表项</li>
+        <li>列表项</li>
+    </ul>
+    有序列表 Ordered list<br/>
+    有序列表使用ol元素定义，li元素定义列表项，有序列表列表项存在序号<br/>
+    ol元素type属性定义列表项序号类型<br/>
+    start属性定义列表项序号起始值<br/>
+    <ol type="A" start="10">
+        <li>列表项</li>
+        <li>列表项</li>
+    </ol>
+    嵌套列表
+    列表可以作为列表的列表项或列表项中内容<br/>
+    自定义列表<br/>
+    dl元素定义自定义列表，dt元素定义自定义列表项，dd定义自定义列表项描述<br/>
+    <dl>
+        <dt>列表项</dt>
+        <dd>描述</dd>
+        <dt>列表项</dt>
+        <dd>描述</dd>
+    </dl>
+    文字格式化元素<br/>
+    <b>粗体字bold</b><br/>
+    <big>大号字</big><br/>
+    <em>着重文字emphasis，文字倾斜</em><br/>
+    <i>斜体字italic</i><br/>
+    <small>小号字</small><br/>
+    <strong>加重语气字，文字加粗</strong><br/>
+    <sub>下标字subscript</sub><br/>
+    <sup>上标字superscript</sup><br/>
+    <ins>插入字</ins><br/>
+    <del>删除字</del><br/>
+    <img src="/learnhtml/image/tumblr.jpg"/>
+    <br/>
+    <h1 align="center">标题1</h1>
+    <p>
+        h1元素align属性用于控制标题中内容排列，不推荐使用，建议使用css代替
+        left 左对齐
+        right 右对齐
+        center	居中对齐内容
+        justify 对行进行伸展，每行长度相等
+    </p>
+    <p>
+        body元素bgcolor属性指定页面背景颜色，不推荐使用，建议使用css代替
+        background属性指定页面背景图片
+    </p>
+    <p>
+        通用属性
+        class   指定元素类名
+        id      指定元素唯一标识
+        style   指定元素样式
+        title   指定元素额外信息
+    </p>
+</body>
+</html>
