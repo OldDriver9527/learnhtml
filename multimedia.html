@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>多媒体</title>
+</head>
+<body>
+    <h3>html图片</h3>
+    <img src="image/tumblr.jpg">
+    <p>
+        使用img元素引入图片，src属性指定引入图片的绝对url或相对路径。
+    </p>
+    <p>
+        alt属性指定备选文本，当图片无法正常显示时会显示备选文本
+    </p>
+    <p>
+        修改图片宽，高应该通过css
+    </p>
+    <p>
+        title属性为图片定义额外信息
+    </p>
+    <figure>
+        <img src="image/tumblr.jpg">
+        <figcaption>figure标题</figcaption>
+    </figure>
+    <p>
+        figure元素用于作为流内容容器，
+        figcaption元素用于定义流内容标题，说明文字
+    </p>
+    <p>
+        使用css可以引入图片，只是无法为图片添加备选文字等内容
+        使用background-image属性指定图片绝对url或相对路径
+    </p>
+    <h3>html视频</h3>
+    <video src="video/vue.mp4" controls>
+        <p>你的浏览器不支持 HTML5 视频。我也没法！！！</p>
+    </video>
+    <p>
+        video元素用于引入视频，video元素的内容作为备选文本，当视频加载失败时显示
+    </p>
+    <p>
+        src属性用于指定视频的绝对url或相对路径，
+        controls属性用于指定是否向用户显示控件，如暂停，播放等
+    </p>
+</body>
+</html>

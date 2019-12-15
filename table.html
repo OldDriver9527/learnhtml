@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>表格</title>
+</head>
+<body>
+    <h3>表格</h3>
+    <p>不建议使用表格布局，建议使用div布局</p>
+    <p>使用table元素定义表格</p>
+    <table >
+        <caption>caption元素定义表格标题，caption元素应位于table元素下</caption>
+        <colgroup style="background-color: yellow">
+        </colgroup>
+        <tr>
+            <th>th元素定义标题单元格</th>
+            <td>td元素定义单元格，单元格是最小的内容容器，单元格不会换行，自动与同一行单元格对齐。使用tr元素定义行</td>
+        </tr>
+        <tr>
+            <td colspan="2">colspan属性指定单元格的宽度是几个单元格</td>
+        </tr>
+        <tr>
+            <td rowspan="2">rowspan属性指定单元格的高度是几个单元格，rowspan属性会影响其他行中单元格个数</td>
+            <td>内容</td>
+        </tr>
+        <tr>
+            <td>内容</td>
+        </tr>
+    </table>
+    <p>
+        colgroup元素用于对表格中列进行组合，便于对列进行格式化，不需再对单元格设置重复样式，
+        colgroup元素只能在table中使用
+    </p>
+    <p>
+        col元素对表格中列进行操作，
+        只能在colgroup中使用，
+        若使用col元素，必须确保tr中存在td元素
+    </p>
+    <h3>表格结构</h3>
+    <ul>
+        <li>thead元素定义表格页眉，嵌套在table元素中使用</li>
+        <li>tbody元素定义表格主体，嵌套在table中使用，tbody总是存在于table中</li>
+        <li>tfoot元素定义表格页脚，嵌套在table中使用</li>
+    </ul>
+
+
+    <table>
+        <caption>太阳系行星数据</caption>
+        <thead>
+            <tr>
+                <th colspan="2"></th>
+                <th>名字</th>
+                <th>图片</th>
+                <th>质量 (10<sup>24</sup>kg)</th>
+                <th>直径 (km)</th>
+                <th>密度 (kg/m<sup>3</sup>)</th>
+                <th>重力 (m/s<sup>2</sup>)</th>
+                <th>天长 (小时)</th>
+                <th>与太阳距离 (10<sup>6</sup>km)</th>
+                <th>平均温度 (°C)</th>
+                <th>卫星数量</th>
+                <th>备注</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th colspan="2" rowspan="4">类地行星</th>
+                <th>水星</th>
+                <td></td>
+                <td>0.330</td>
+                <td>4,879</td>
+                <td>5427</td>
+                <td>3.7</td>
+                <td>4222.6</td>
+                <td>57.9</td>
+                <td>167</td>
+                <td>0</td>
+                <td>距太阳最近</td>
+            </tr>
+            <tr>
+                <th>金星</th>
+                <td></td>
+                <td>4.87</td>
+                <td>12,104</td>
+                <td>5243</td>
+                <td>8.9</td>
+                <td>2802.0</td>
+                <td>108.2</td>
+                <td>464</td>
+                <td>0</td>
+                <td></td>
+            </tr>
+            <tr>
+                <th>地球</th>
+                <td></td>
+                <td>5.97</td>
+                <td>12,756</td>
+                <td>5514</td>
+                <td>9.8</td>
+                <td>24.0</td>
+                <td>149.6</td>
+                <td>15</td>
+                <td>1</td>
+                <td>我们的世界</td>
+            </tr>
+            <tr>
+                <th>火星</th>
+                <td></td>
+                <td>0.642</td>
+                <td>6,792</td>
+                <td>3933</td>
+                <td>3.7</td>
+                <td>24.7</td>
+                <td>227.9</td>
+                <td>-65</td>
+                <td>2</td>
+                <td>红色星球</td>
+            </tr>
+            <tr>
+                <th rowspan="4">类木行星</th>
+                <th rowspan="2">气巨星</th>
+                <th>木星</th>
+                <td></td>
+                <td>1898</td>
+                <td>142,984</td>
+                <td>1326</td>
+                <td>23.1</td>
+                <td>9.9</td>
+                <td>778.6</td>
+                <td>-110</td>
+                <td>67</td>
+                <td>太阳系最大</td>
+            </tr>
+            <tr>
+                <th>土星</th>
+                <td></td>
+                <td>568</td>
+                <td>120,536</td>
+                <td>687</td>
+                <td>9.0</td>
+                <td>10.7</td>
+                <td>1433.5</td>
+                <td>-140</td>
+                <td>62</td>
+                <td></td>
+            </tr>
+            <tr>
+                <th rowspan="2">冰巨星</th>
+                <th>天王星</th>
+                <td></td>
+                <td>86.8</td>
+                <td>51,118</td>
+                <td>1271</td>
+                <td>8.7</td>
+                <td>17.2</td>
+                <td>2872.5</td>
+                <td>-195</td>
+                <td>27</td>
+                <td></td>
+            </tr>
+            <tr>
+                <th>海王星</th>
+                <td></td>
+                <td>102</td>
+                <td>49,528</td>
+                <td>1638</td>
+                <td>11.0</td>
+                <td>16.1</td>
+                <td>4495.1</td>
+                <td>-200</td>
+                <td>14</td>
+                <td></td>
+            </tr>
+            <tr>
+                <th colspan="2">矮行星</th>
+                <th>冥王星</th>
+                <td></td>
+                <td>0.0146</td>
+                <td>2,370</td>
+                <td>2095</td>
+                <td>0.7</td>
+                <td>153.3</td>
+                <td>5906.4</td>
+                <td>-225</td>
+                <td>5</td>
+                <td>2006年降格，但是 还存在争议.</td>
+            </tr>
+        </tbody>
+        <tfoot></tfoot>
+    </table>
+
+</body>
+</html>

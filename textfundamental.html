@@ -5,7 +5,7 @@
     <title>html文字基础</title>
 </head>
 <body>
-    标题heading
+    <h3>标题heading</h3>
     <h1>主标题</h1>
     <h2>第二级标题</h2>
     <h3>第三级标题</h3>
@@ -14,18 +14,20 @@
     <h6>第六级标题</h6>
     最好只对每个页面使用一次<br/>
     在可用的六个标题级别中，建议每页使用不超过三个<br/>
-    段落
+    标题元素align属性用于控制标题中内容排列，不推荐使用，建议使用css代替<br/>
+    可取值 left 左对齐 ，right 右对齐 ，center	居中对齐内容 ，justify 对行进行伸展，每行长度相等<br/>
+    <h3>段落</h3>
     <p>段落</p>
-    列表<br/>
-    列表分为无序列表，有序列表，自定义列表<br/>
-    无序列表Unordered list<br/>
+    <h3>列表</h3>
+    列表分为无序列表，有序列表，描述列表<br/>
+    <h5>无序列表Unordered list</h5>
     ul元素定义无序列表，li定义列表项,无序列表列表项没有序号，只有符号<br/>
     ul元素type属性定义列表项符号类型
     <ul type="circle">
         <li>列表项</li>
         <li>列表项</li>
     </ul>
-    有序列表 Ordered list<br/>
+    <h5>有序列表 Ordered list</h5>
     有序列表使用ol元素定义，li元素定义列表项，有序列表列表项存在序号<br/>
     ol元素type属性定义列表项序号类型<br/>
     start属性定义列表项序号起始值<br/>
@@ -33,47 +35,46 @@
         <li>列表项</li>
         <li>列表项</li>
     </ol>
-    嵌套列表
+    <h5>嵌套列表</h5>
     列表可以作为列表的列表项或列表项中内容<br/>
-    自定义列表<br/>
-    dl元素定义自定义列表，dt元素定义自定义列表项，dd定义自定义列表项描述<br/>
+    <h5>描述列表</h5>
+    dl元素定义描述列表，dt元素定义列表项，dd定义列表项描述<br/>
     <dl>
         <dt>列表项</dt>
-        <dd>描述</dd>
+            <dd>描述</dd>
         <dt>列表项</dt>
-        <dd>描述</dd>
+            <dd>描述</dd>
     </dl>
-    文字格式化元素<br/>
+    列表项描述和列表项会产生缩进<br/>
+    <h3>文字格式化元素</h3>
+    <strong>加重语气字，文字加粗</strong><br/>
     <b>粗体字bold</b><br/>
-    <big>大号字</big><br/>
     <em>着重文字emphasis，文字倾斜</em><br/>
     <i>斜体字italic</i><br/>
+    <big>大号字</big><br/>
     <small>小号字</small><br/>
-    <strong>加重语气字，文字加粗</strong><br/>
     <sub>下标字subscript</sub><br/>
     <sup>上标字superscript</sup><br/>
     <ins>插入字</ins><br/>
     <del>删除字</del><br/>
-    <img src="/learnhtml/image/tumblr.jpg"/>
-    <br/>
-    <h1 align="center">标题1</h1>
-    <p>
-        h1元素align属性用于控制标题中内容排列，不推荐使用，建议使用css代替
-        left 左对齐
-        right 右对齐
-        center	居中对齐内容
-        justify 对行进行伸展，每行长度相等
-    </p>
-    <p>
-        body元素bgcolor属性指定页面背景颜色，不推荐使用，建议使用css代替
-        background属性指定页面背景图片
-    </p>
-    <p>
-        通用属性
-        class   指定元素类名
-        id      指定元素唯一标识
-        style   指定元素样式
-        title   指定元素额外信息
-    </p>
+    <h3>引用</h3>
+    <blockquote>
+        blockquote元素定义块引用，blockquote元素前后会添加空行，blockquote中的内容会添加缩进。
+        cite属性指定引用来源
+    </blockquote>
+    <q>q元素定义行内引用，q元素前后不添加空行，会在元素内容前后添加双引号</q><br/>
+    <cite>cite元素定义引用来源</cite><br/>
+    <h3>缩略语abbreviation</h3>
+    <abbr title="缩略语的完整版本">abbr元素用于包裹缩略语，title属性指定缩略语的完成版本</abbr><br/>
+    <h3>联系方式</h3>
+    <address>address元素定义文档作者联系方式</address>
+    <h3>展示代码</h3>
+    <code>code元素定义代码文本，会处理连续空格</code><br/>
+    <pre>pre元素用于定义代码文     本，保留空格</pre>
+    <var>var元素用于标识变量名</var><br/>
+    <kbd>kbd元素定义键盘文本，表示文本需通过键盘输入</kbd><br/>
+    <samp>samp元素定义计算机程序输出</samp><br/>
+    <h3>日期时间</h3>
+    <time datetime="2019-12-14 16:00:00">time元素定义日期，时间，供搜索引擎使用,不会产生其他效果</time><br/>
 </body>
 </html>
