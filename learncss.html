@@ -2,10 +2,43 @@
 <html lang="zh">
 <head>
     <meta charset="UTF-8">
-    <title>层叠样式表介绍</title>
+    <title>层叠样式表介绍Cascading Style Sheets</title>
     <link rel="stylesheet" href="css/learncss.css" type="text/css"/>
 </head>
 <body>
+    <p>
+        Cascading Style Sheets工作原理
+        1.浏览器加载html文档，对文档进行解析
+        2.解析文档时会形成DOM，浏览器将DOM渲染为文档树
+        3.解析文档时浏览器还会拉取html文档关联的资源，如图像，视频，css。当拉取css时，浏览器会对css进行解析。
+          浏览器根据选择器将样式应用于节点
+        4.页面在屏幕上展示
+    </p>
+    <p>
+        注释
+        css中使用/**/定义注释
+    </p>
+    <p>
+        基本语法
+        selector{property:value}
+        多个属性使用;隔开
+        若属性值包含多个单词，属性值使用双引号标识
+    </p>
+    <p>
+        高级语法
+        选择器组
+        selector1,selector2{property:value}
+        选择器组中可以包含多个选择器，可以为多个选择器设置相同样式
+    </p>
+    <p>
+        样式层叠
+        样式来源有三种，浏览器为html定义的默认样式，用户定义的样式，开发者定义的样式
+        其中开发者定义的样式会覆盖用户定义的样式，用户定义的样式会覆盖浏览器默认样式
+    </p>
+    <p>
+        继承
+        为特定元素指定的样式不仅应用于该元素，还会应用于该元素的后代元素
+    </p>
     <h1>h1样式</h1>
     <h2>h2样式</h2>
     <h3><p>h3样式</p></h3>
