@@ -1,9 +1,9 @@
-h1,h2{
+[title^=shishi]{
     color: blue;
 }
-body{
+[title|=shishi]{
     color: yellow;
 }
-h3{
-    color: brown;
+.background{
+    background-color: black;
 }

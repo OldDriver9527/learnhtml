@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>css背景样式</title>
+    <link rel="stylesheet" href="css/background.css" type="text/css"/>
+</head>
+<body>
+    <p class="background-color">
+        background-color属性设置背景颜色，该属性不能被继承
+    </p>
+    <p class="background-image">
+        background-image属性指定背景图片，通过url指定图片绝对url或相对路径
+    </p>
+    <p class="background-repeat">
+        background-repeat属性指定背景图片是否可以重复
+        repeat 水平方向，垂直方向都可重复，默认值
+        no-repeat 水平方向，垂直方向都不可重复
+        repeat-x 水平方向可重复
+        repeat-y 垂直方向可重复
+    </p>
+    <p>
+        background-position属性设置背景图片起始位置
+        x% y%
+        x--水平位置，图片左边缘到屏幕左边缘的距离，100%表示屏幕宽度-图片宽度
+        y--垂直位置，图片上边缘到屏幕上边缘的距离，100%表示屏幕高度-图片高度
+        xpx ypx
+        x--水平位置，图片左边缘到屏幕左边缘的距离，具体像素值
+        y--垂直位置，图片上边缘到屏幕上边缘的距离，具体像素值
+        当仅指定一个值，另一个值取50%
+        background-position属性在一些浏览器下需设置background-attachment:fixed才会生效
+    </p>
+    <p>
+        background-attachment属性设置背景图片是否随页面滚动而滚动
+        scroll 背景图片随页面滚动而滚动，默认值
+        fixed 背景图片固定，不随页面滚动而滚动
+    </p>
+    <p>
+        background-size属性设置背景图片尺寸
+        xpx ypx
+        x--宽度
+        y--高度
+    </p>
+</body>
+</html>

@@ -60,10 +60,25 @@
         属性选择器
         [attribute] 选择具有指定属性的元素
         [attribute=value] 选择具有指定属性，且属性值为指定值的元素
-        [attribute]
+        [attribute^=value] 选择具有指定属性，且属性值以value开头的元素
+        [attribute$=value] 选择具有指定属性，且属性值以value结尾的元素
+        [attribute*=value] 选择具有指定属性，且属性值包含value的元素
+        [attribute~=value] 选择具有指定属性，且属性值包含独立单词value的元素，value前后可以是空格
+        [attribute|=value] 选择具有指定属性，且属性值以独立单词value开头，value后可以是-或什么都没有
+    </p>
+    <p>
     </p>
     <h1>h1样式</h1>
     <h2>h2样式</h2>
     <h3><p>h3样式</p></h3>
+    <p title="shishi">
+        shishi
+    </p>
+    <p title="shishititle">
+        shishi
+    </p>
+    <p class="background">
+        背景
+    </p>
 </body>
 </html>
