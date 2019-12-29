@@ -1,0 +1,24 @@
+.text-color{
+    color: red;
+}
+.text-align{
+    text-align: left;
+}
+.text-indent{
+    text-indent: 2em;
+}
+.text-transform{
+    text-transform: capitalize;
+}
+.text-shadow{
+    text-shadow: 10px 10px 1px yellow;
+}
+.text-wrap{
+    text-wrap: none;
+}
+.text-decoration{
+    text-decoration: line-through;
+}
+.line-height{
+    line-height: 1.5;
+}

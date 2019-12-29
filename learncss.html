@@ -15,10 +15,6 @@
         4.页面在屏幕上展示
     </p>
     <p>
-        注释
-        css中使用/**/定义注释
-    </p>
-    <p>
         基本语法
         selector{property:value}
         多个属性使用;隔开
@@ -36,8 +32,12 @@
         其中开发者定义的样式会覆盖用户定义的样式，用户定义的样式会覆盖浏览器默认样式
     </p>
     <p>
-        继承
-        为特定元素指定的样式不仅应用于该元素，还会应用于该元素的后代元素
+        样式继承
+        为特定元素指定的样式不仅应用于该元素，还会应用于该元素的后代元素;并非所有属性都能继承
+    </p>
+    <p>
+        元素选择器
+        选择指定元素
     </p>
     <p>
         派生选择器
@@ -63,22 +63,35 @@
         [attribute^=value] 选择具有指定属性，且属性值以value开头的元素
         [attribute$=value] 选择具有指定属性，且属性值以value结尾的元素
         [attribute*=value] 选择具有指定属性，且属性值包含value的元素
-        [attribute~=value] 选择具有指定属性，且属性值包含独立单词value的元素，value前后可以是空格
         [attribute|=value] 选择具有指定属性，且属性值以独立单词value开头，value后可以是-或什么都没有
+        [attribute~=value] 选择具有指定属性，且属性值包含独立单词value的元素，value前后可以是空格
     </p>
     <p>
+        伪类
+        添加在选择器上的关键字，指定选择元素的特殊状态
+        selector:pseudo-class {
+            property: value;
+        }
+        A:first-child 表示某元素第一个子元素的A元素
     </p>
-    <h1>h1样式</h1>
-    <h2>h2样式</h2>
-    <h3><p>h3样式</p></h3>
-    <p title="shishi">
-        shishi
+    <p>
+        伪元素
+        添加在选择器上的关键字，对选择元素样式进行修改
+        selector:: pseudo-element {
+            property: value;
+        }
+        ::before 在选择元素内容前添加内容
+        ::after 在选择元素内容后添加内容
     </p>
-    <p title="shishititle">
-        shishi
+    <p>
+        通过多种选择器为同一元素指定样式，确定度高的选择器优先级更高
     </p>
-    <p class="background">
-        背景
+    <p>
+        注释
+        CSS注释以/* 开始，以 */结束
+    </p>
+    <p class="test">
+        test
     </p>
 </body>
 </html>

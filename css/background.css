@@ -3,8 +3,6 @@
 }
 body{
     background-image: url("../img/face.jpg");
-    background-repeat: no-repeat;
+    background-repeat: repeat-x;
     background-attachment:fixed;
-    background-position: 10% 10%;
-    background-size: 0px 0px;
 }

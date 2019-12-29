@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>盒子模型</title>
+    <link rel="stylesheet" href="css/boxmodel.css" type="text/css"/>
+</head>
+<body>
+    <p>
+        每个元素都会生成盒子模型，盒子模型具有外部显示类型，内部显示类型
+        外部显示类型控制盒子是块级盒子还是内联盒子
+            块级盒子会单独占据一行；width，height属性可发挥作用；padding，border，margin属性会将其他元素盒子推开
+            内联盒子不会单独占据一行；width，height属性不起作用；padding，border，margin属性不会将其他元素盒子推开
+        内部显示类型控制子元素布局
+    </p>
+    <p>
+        盒子模型由四部分组成
+        内容，通过width，height可修改大小
+        内边距，通过padding可修改大小
+        边框，通过border可修改大小
+        外边距，通过margin可修改大小
+        ie浏览器中存在ie盒子模型，width，height并不表示内容宽度，高度
+    </p>
+    <p>
+        padding属性设置内边距，为简写属性，可以一次设置上，右，下，左四个内边距
+        padding值为百分数时，相对于父元素宽度进行计算
+    </p>
+    <p>
+        border属性设置边框,简写属性可以同时设置边框宽度，样式，颜色
+        border: border-width border-style border-color;
+    </p>
+    <p>
+        border-style属性设置边框样式
+        none 无边框，无边框时，边框宽度取0
+    </p>
+    <p>
+        border-width属性设置边框宽度
+    </p>
+    <p>
+        border-color属性设置边框颜色
+    </p>
+    <p>
+        border-radius属性设置圆角边框
+    </p>
+    <p>
+        box-shadow属性设置边框阴影
+    </p>
+    <p>
+        border-image属性设置边框图片？？？
+    </p>
+    <p>
+        margin属性设置外边距，简写属性，可以一次设置上，右，下，左四个外边距
+        外边距值为百分数时，相对父元素宽度进行计算
+    </p>
+    <p>
+        外边距折叠
+        块级元素的上外边距，下外边距有时会折叠为一个外边距，折叠后取两者中较大的
+    </p>
+    <p>
+        行内块级盒子（inline-block）
+        css2中，display属性添加特殊值inline-block，可设置行内块级盒子
+        设置width,height属性起作用
+        设置padding，border，margin属性会将其他元素盒子推开
+        不会单独占据一行
+    </p>
+</body>
+</html>

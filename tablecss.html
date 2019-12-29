@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>表格样式</title>
+    <link rel="stylesheet" href="css/table.css" type="text/css"/>
+</head>
+<body>
+    <table>
+        <caption>caption</caption>
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+        </tr>
+        <tr>
+            <td>Bill</td>
+            <td>Gates</td>
+        </tr>
+        <tr>
+            <td>Steven</td>
+            <td></td>
+        </tr>
+    </table>
+    <p>
+        border-collapse属性用于折叠边框
+        如果可能，将表格，单元格边框合并为一个边框
+    </p>
+    <p>
+        border-spacing属性设置相邻单元格边框之间的距离
+        仅在边框分离模式下有效
+        border-spacing:hpx vpx;
+        h 水平距离
+        v 垂直距离
+    </p>
+    <p>
+        empty-cells属性设置是否显示空单元格
+        show 显示
+        hide 不显示
+    </p>
+    <p>
+        table-layout属性设置布局单元格，行，列的算法
+        auto 自动布局算法
+        列宽由列单元格中没有折行的最宽单元格决定
+        fixed 固定布局算法
+        列宽由首行单元格宽度决定
+    </p>
+    <p>
+        caption-side属性设置表格标题位置
+        top 标题位于表格之上
+        bottom 标题位于表格之下
+    </p>
+</body>
+</html>

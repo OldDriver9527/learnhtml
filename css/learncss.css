@@ -7,3 +7,9 @@
 .background{
     background-color: black;
 }
+#test{
+    background-color: red;
+}
+.test::before{
+    content: "jjjjjjjjjjjj";
+}

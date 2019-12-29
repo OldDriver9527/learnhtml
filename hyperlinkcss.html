@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title> 超链接样式</title>
+    <link rel="stylesheet" href="css/hyperlink.css" type="text/css"/>
+</head>
+<body>
+    链接存在多种状态
+    link 普通的，未被点击的链接
+    visited 点击过的链接
+    hover 鼠标位于链接之上
+    active 链接被点击时刻
+    focus 使用tab选中的链接
+    通过伪类能够选择链接的状态 :link,:visited,:hover,:active,:focus
+    <p>
+        链接样式设置存在顺序，靠后的样式会依赖靠前的样式
+        靠前的样式会应用于靠后的样式中
+    </p>
+    <a href="http://www.baidu.com">baidu</a>
+</body>
+</html>
